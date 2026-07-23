@@ -26,4 +26,9 @@ public class Circulo implements FiguraGeometrica2D {
     public String getTipo() {
         return "Circulo";
     }
+
+    @Override
+public int compareTo(FiguraGeometrica2D outra) {
+    return Double.compare(this.getArea(), outra.getArea());
+}
 }
