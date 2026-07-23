@@ -2,9 +2,12 @@ package figuras;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class RepositorioDeFiguras2D {
-
+public void ordenaPorArea() {
+    Collections.sort(figuras);
+    
     private List<FiguraGeometrica2D> figuras = new ArrayList<>();
 
     public boolean adicionaFigura(FiguraGeometrica2D figura) {
